@@ -11,6 +11,15 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css"
@@ -20,7 +29,6 @@
     />
   </head>
   <body>
-
     <header class="header">
       <div class="header__container container">
         <div
@@ -37,9 +45,15 @@
             <ul
               class="header__container__row__col__nav d-flex align-content-center gap-4 list-unstyled mt-3"
             >
-              <li class="active"><i class="ri-mic-line"></i>&ensp;Instant</li>
-              <li><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</li>
-              <li><i class="ri-magic-line"></i>&ensp;Advance</li>
+              <li class="active"><a href="./index.html"><i class="ri-mic-line"></i>&ensp;Instant</a></li>
+              <li><a href="./upload.html"><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</a></li>
+              <!-- <li><i class="ri-magic-line"></i>&ensp;Advance</li> -->
+              <li>
+                <a href="./advance.html">
+                    <i class="fa-solid fa-wand-magic-sparkles sparkles"></i
+                    >&ensp;Advance
+                </a>
+              </li>
               <li><i class="ri-eye-line"></i>&ensp;View</li>
               <li><i class="ri-settings-3-line"></i>&ensp;Settings</li>
               <!-- <li>Profile</li> -->
@@ -49,14 +63,12 @@
                   <span>05h:20m</span>
                 </div>
                 <span class="profile-img">JD</span>
-                
               </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-
 
     <section class="translate-screen">
       <div class="translate-screen__container container">
@@ -83,7 +95,8 @@
               <div class="source-list" id="source-list">
                 <span
                   ><label for="input1"
-                    ><input type="radio" name="source-lang">English</label>
+                    ><input type="radio" name="source-lang" />English</label
+                  >
                 </span>
                 <span
                   ><label
@@ -140,21 +153,29 @@
                     ><input type="radio" name="source-lang" />Japanese</label
                   ></span
                 >
-                <span
-                    ><label
-                      ><input type="radio" name="target-lang" />Czech</label
-                    ></span
-                  >
-                  <span
-                    ><label
-                      ><input type="radio" name="target-lang" />Korean</label
-                    ></span
-                  >
-                  <span
-                    ><label
-                      ><input type="radio" name="target-lang" />Spanish</label
-                    ></span
-                  >
+                <span id="source-more-btn" onclick="sourceMoreBtn()">
+                  <label> <i class="ri-add-line"></i>More</label>
+                </span>
+                <span class="source-show-more"
+                  ><label
+                    ><input type="radio" name="source-lang" />Swedish</label
+                  ></span
+                >
+                <span class="source-show-more"
+                  ><label
+                    ><input type="radio" name="source-lang" />Italian</label
+                  ></span
+                >
+                <span class="source-show-more"
+                  ><label
+                    ><input type="radio" name="source-lang" />German</label
+                  ></span
+                >
+                <span class="source-show-more"
+                  ><label
+                    ><input type="radio" name="source-lang" />Japanese</label
+                  ></span
+                >
               </div>
             </div>
 
@@ -164,6 +185,7 @@
                 <textarea
                   placeholder="Type or paste in your source material here"
                 ></textarea>
+                <i class="ri-file-copy-line" title='Copy Text'></i>
               </div>
             </div>
           </div>
@@ -182,78 +204,91 @@
                 <div class="target-list" id="target-list">
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" id="input1">English</label>
+                      ><input
+                        type="radio"
+                        name="target-lang"
+                        id="input1"
+                      />English</label
+                    >
                   </span>
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />Bulgarian</label
+                      ><input type="radio" name="target-lang" />Bulgarian</label
                     ></span
                   >
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />Danish</label
+                      ><input type="radio" name="target-lang" />Danish</label
                     ></span
                   >
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />English</label
+                      ><input type="radio" name="target-lang" />English</label
                     ></span
                   >
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />Turkish</label
+                      ><input type="radio" name="target-lang" />Turkish</label
                     ></span
                   >
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />Chinese</label
+                      ><input type="radio" name="target-lang" />Chinese</label
                     ></span
                   >
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />Hungarian</label
+                      ><input type="radio" name="target-lang" />Hungarian</label
                     ></span
                   >
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />French</label
+                      ><input type="radio" name="target-lang" />French</label
                     ></span
                   >
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />Swedish</label
+                      ><input type="radio" name="target-lang" />Swedish</label
                     ></span
                   >
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />Italian</label
+                      ><input type="radio" name="target-lang" />Italian</label
                     ></span
                   >
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />German</label
+                      ><input type="radio" name="target-lang" />German</label
                     ></span
                   >
                   <span
                     ><label
-                      ><input type="radio" name="source-lang" />Japanese</label
+                      ><input type="radio" name="target-lang" />Japanese</label
                     ></span
                   >
-                  <span
-                      ><label
-                        ><input type="radio" name="target-lang" />Czech</label
-                      ></span
-                    >
-                    <span
-                      ><label
-                        ><input type="radio" name="target-lang" />Korean</label
-                      ></span
-                    >
-                    <span
-                      ><label
-                        ><input type="radio" name="target-lang" />Spanish</label
-                      ></span
-                    >
+                  <span id="target-more-btn" onclick="targetMoreBtn()">
+                    <label> <i class="ri-add-line"></i>More</label>
+                  </span>
+                  <span class="target-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />Swedish</label
+                    ></span
+                  >
+                  <span class="target-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />Italian</label
+                    ></span
+                  >
+                  <span class="target-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />German</label
+                    ></span
+                  >
+                  <span class="target-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />Japanese</label
+                    ></span
+                  >
                 </div>
               </div>
               <button class="btn1" id="voice-wrapper" onclick="btnToggle()">
@@ -261,11 +296,17 @@
                 <i class="ri-stop-circle-line" id="stop"></i>
               </button>
               <button class="btn2"><i class="ri-eye-line"></i></button>
+              <img
+                src="./images/recording.gif"
+                alt="recording"
+                class="img-fluid recording" id="recording"
+              />
             </div>
             <div class="mt-3 content">
               <h6>Target</h6>
               <div>
                 <textarea></textarea>
+                <i class="ri-file-copy-line" title='Copy Text'></i>
               </div>
             </div>
           </div>
@@ -305,14 +346,29 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <script>
+      function btnToggle() {
+        const voiceBtn = document.getElementById("voice-wrapper");
+        const recordingGif = document.getElementById("recording");
+        voiceBtn.classList.toggle("btn1-toggle");
+        recordingGif.classList.toggle("show-list");
+      }
+    </script>
 
     <script>
+      function sourceMoreBtn(event) {
+        // event.stopPropagation()
+        const sourceShowBtn = document.getElementById("source-more-btn");
+        const sourceShowMore =
+          document.getElementsByClassName("source-show-more");
+        // console.log(sourceShowMore)
 
-      function btnToggle(){
-        const voiceBtn = document.getElementById("voice-wrapper")
-        voiceBtn.classList.toggle("btn1-toggle")
+        for (var i = 0; i < sourceShowMore.length; i++) {
+          // buttons[i].hidden = true;
+          sourceShowMore[i].classList.toggle("show-list");
+        }
+        sourceShowBtn.classList.toggle("hide");
       }
-
     </script>
 
     <script>
@@ -330,22 +386,48 @@
           sourceList.classList.remove("show-list");
         }
       });
+
+      const listSource = document.getElementById("source-list");
+      listSource.addEventListener('click', function(event) {
+        event.stopPropagation();
+      });
     </script>
 
     <script>
-           function showTargetList() {
+      function targetMoreBtn(event) {
+        // event.stopPropagation()
+        const targetShowBtn = document.getElementById("target-more-btn");
+        const targetShowMore =
+          document.getElementsByClassName("target-show-more");
+        // console.log(sourceShowMore)
+
+        for (var i = 0; i < targetShowMore.length; i++) {
+          // buttons[i].hidden = true;
+          targetShowMore[i].classList.toggle("show-list");
+        }
+        targetShowBtn.classList.toggle("hide");
+      }
+    </script>
+
+    <script>
+      function showTargetList() {
         const targetBtn = document.getElementById("target-btn");
         const targetList = document.getElementById("target-list");
         targetList.classList.toggle("show-list");
       }
 
       document.addEventListener("click", function clickOutside(event) {
-        const targetBtn= document.getElementById("target-btn");
+        const targetBtn = document.getElementById("target-btn");
 
         if (!targetBtn.contains(event.target)) {
-          const targetList= document.getElementById("target-list");
+          const targetList = document.getElementById("target-list");
           targetList.classList.remove("show-list");
         }
+      });
+
+      const listTarget = document.getElementById("target-list");
+      listTarget.addEventListener('click', function(event) {
+        event.stopPropagation();
       });
     </script>
   </body>

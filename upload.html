@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perrot Website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css"
+      integrity="sha512-eRbcr5kt0vg2Kgl5BBKIqXoZ0f1lpe4ImM8GyzJN7mrhUR57xPh2JX+5Ra8zlh5QZWxEVQW9MOfMaCEEjnMcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div
+          class="header__container__row row d-flex justify-content-center align-content-center"
+        >
+          <div
+            class="header__container__row__col col col-md-12 col-lg-12 d-flex justify-content-between align-content-center p-2"
+          >
+            <img
+              class="header__container__row__col__img"
+              src="./images/logo.png"
+              alt=""
+            />
+            <ul
+              class="header__container__row__col__nav d-flex align-content-center gap-4 list-unstyled mt-3"
+            >
+              <li>
+                <a href="./index.html"
+                  ><i class="ri-mic-line"></i>&ensp;Instant</a
+                >
+              </li>
+              <li class="active">
+                <a href="./upload.html"
+                  ><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</a
+                >
+              </li>
+              <!-- <li><i class="ri-magic-line"></i>&ensp;Advance</li> -->
+              <li>
+                <a href="./advance.html">
+                    <i class="fa-solid fa-wand-magic-sparkles sparkles"></i
+                    >&ensp;Advance
+                </a>
+              </li>
+              <li><i class="ri-eye-line"></i>&ensp;View</li>
+              <li><i class="ri-settings-3-line"></i>&ensp;Settings</li>
+              <!-- <li>Profile</li> -->
+              <li class="profile">
+                <div>
+                  <span>Hours left</span>
+                  <span>05h:20m</span>
+                </div>
+                <span class="profile-img">JD</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="upload-screen">
+      <div class="upload-screen__container container">
+        <div
+          class="upload-screen__container__row row d-flex justify-content-evenly align-items-start flex-wrap"
+        >
+          <div
+            class="upload-screen__container__row__col col col-md-11 col-lg-11"
+          >
+          
+          <div class="first">
+            <div
+                  class="source-language d-flex justify-content-between align-items-center"
+                  id="source-btn"
+                  onclick="showSourceList()"
+                >
+                  <span>Select Source Language</span>
+                  <i class="ri-arrow-down-s-line"></i>
+    
+                  <div class="source-list" id="source-list">
+                    <span
+                      ><label for="input1"
+                        ><input type="radio" name="source-lang" />English</label
+                      >
+                    </span>
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />Bulgarian</label
+                      ></span
+                    >
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />Danish</label
+                      ></span
+                    >
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />English</label
+                      ></span
+                    >
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />Turkish</label
+                      ></span
+                    >
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />Chinese</label
+                      ></span
+                    >
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />Hungarian</label
+                      ></span
+                    >
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />French</label
+                      ></span
+                    >
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />Swedish</label
+                      ></span
+                    >
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />Italian</label
+                      ></span
+                    >
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />German</label
+                      ></span
+                    >
+                    <span
+                      ><label
+                        ><input type="radio" name="source-lang" />Japanese</label
+                      ></span
+                    >
+                    <span id="source-more-btn" onclick="sourceMoreBtn()">
+                      <label> <i class="ri-add-line"></i>More</label>
+                    </span>
+                    <span class="source-show-more"
+                      ><label
+                        ><input type="radio" name="source-lang" />Swedish</label
+                      ></span
+                    >
+                    <span class="source-show-more"
+                      ><label
+                        ><input type="radio" name="source-lang" />Italian</label
+                      ></span
+                    >
+                    <span class="source-show-more"
+                      ><label
+                        ><input type="radio" name="source-lang" />German</label
+                      ></span
+                    >
+                    <span class="source-show-more"
+                      ><label
+                        ><input type="radio" name="source-lang" />Japanese</label
+                      ></span
+                    >
+                  </div>
+            </div>
+            <div class="checkboxes-and-btn">
+                    <div class="checkboxes">
+                        <span><label><input type="checkbox">&ensp;Apply Time Code</label></span>
+                        <span><label><input type="checkbox">&ensp;Generate Press Release</label></span>
+                    </div>
+                    <button id="start-btn">Start</button>
+            </div>
+          </div>
+          
+          <div class="second">
+            <i class="ri-upload-cloud-2-line"></i>
+            <h6>Choose or Drag Files</h6>
+          </div>
+          
+          <div class="third">
+            <table class="">
+                <tr class="heading">
+                    <th>File Name</th>
+                    <th>Size</th>
+                    <th>Length</th>
+                    <th>Progress</th>
+                    <th>Download</th>
+                </tr>
+
+                <tr>
+                    <td>Drama Script One</td>
+                    <td>1.2 MB</td>
+                    <td>35 <small>min</small></td>
+                    <td><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width: 50%">50%</div>
+                      </div>
+                    </td>
+                    <td class="download-items position-relative" index='0'>
+                        <i class="ri-download-cloud-2-line download-btn" onclick="btnDownload(0)">
+                        </i>
+                        <div id="list0" class="list">
+                          <span>.doc</span>
+                          <span>.txt</span>
+                          <span>.srt</span>
+                      </div>
+                    </td>
+                </tr>
+                <tr>
+                  <td>Drama Script One</td>
+                  <td>1.2 MB</td>
+                  <td>35 <small>min</small></td>
+                  <td><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-success" style="width: 50%">50%</div>
+                    </div>
+                  </td>
+                  <td class="download-items position-relative" index="1">
+                      <i class="ri-download-cloud-2-line download-btn" onclick="btnDownload(1)">
+                      </i>
+                      <div id="list1" class="list">
+                        <span>.doc</span>
+                        <span>.txt</span>
+                        <span>.srt</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Drama Script One</td>
+                  <td>1.2 MB</td>
+                  <td>35 <small>min</small></td>
+                  <td><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-success" style="width: 50%">50%</div>
+                    </div>
+                  </td>
+                  <td class="download-items position-relative" index="2">
+                      <i class="ri-download-cloud-2-line download-btn" onclick="btnDownload(2)">
+                      </i>
+                      <div id="list2" class="list">
+                        <span>.doc</span>
+                        <span>.txt</span>
+                        <span>.srt</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Drama Script One</td>
+                  <td>1.2 MB</td>
+                  <td>35 <small>min</small></td>
+                  <td><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-success" style="width: 50%">50%</div>
+                    </div>
+                  </td>
+                  <td class="download-items position-relative" index="3">
+                      <i class="ri-download-cloud-2-line download-btn" onclick="btnDownload(3)">
+                      </i>
+                      <div id="list3" class="list">
+                        <span>.doc</span>
+                        <span>.txt</span>
+                        <span>.srt</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Drama Script One</td>
+                  <td>1.2 MB</td>
+                  <td>35 <small>min</small></td>
+                  <td><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-success" style="width: 50%">50%</div>
+                    </div>
+                  </td>
+                  <td class="download-items position-relative" index="4">
+                      <i class="ri-download-cloud-2-line download-btn" onclick="btnDownload(4)">
+                      </i>
+                      <div id="list4" class="list">
+                        <span>.doc</span>
+                        <span>.txt</span>
+                        <span>.srt</span>
+                    </div>
+                  </td>
+                </tr>
+                
+            </table>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"
+      integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js"
+      integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.js"
+      integrity="sha512-qN7eI/gyKBObAOLw/VOd8eDV4eR/Mp9gebkx0IqCpV5p7LYz0RCQHJahUwR+UB5W+BaphKRDz3eeqL11mGgIrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      function btnDownload(index) {
+        const downloadList = document.getElementById("list" + index);
+        downloadList.classList.toggle("show-list");
+      }
+    </script>
+
+    <script>
+      function sourceMoreBtn(event) {
+        // event.stopPropagation()
+        const sourceShowBtn = document.getElementById("source-more-btn");
+        const sourceShowMore =
+          document.getElementsByClassName("source-show-more");
+        // console.log(sourceShowMore)
+
+        for (var i = 0; i < sourceShowMore.length; i++) {
+          // buttons[i].hidden = true;
+          sourceShowMore[i].classList.toggle("show-list");
+        }
+        sourceShowBtn.classList.toggle("hide");
+      }
+    </script>
+
+    <script>
+      function showSourceList() {
+        const sourceBtn = document.getElementById("source-btn");
+        const sourceList = document.getElementById("source-list");
+        sourceList.classList.toggle("show-list");
+      }
+
+      document.addEventListener("click", function clickOutside(event) {
+        const sourceBtn = document.getElementById("source-btn");
+
+        if (!sourceBtn.contains(event.target)) {
+          const sourceList = document.getElementById("source-list");
+          sourceList.classList.remove("show-list");
+        }
+      });
+
+      const listSource = document.getElementById("source-list");
+      listSource.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
+    </script>
+
+  </body>
+</html>
