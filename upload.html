@@ -65,14 +65,31 @@
               <li><i class="ri-eye-line"></i>&ensp;View</li>
               <li><i class="ri-settings-3-line"></i>&ensp;Settings</li>
               <!-- <li>Profile</li> -->
-              <li class="profile">
+              <!-- <li class="profile">
                 <div>
                   <span>Hours left</span>
                   <span>05h:20m</span>
                 </div>
                 <span class="profile-img">JD</span>
+              </li> -->
+              <li>
+                <div class="profile">
+                  <div class="time">
+                    <span>Hours left</span>
+                    <span>05h:20m</span>
+                  </div>
+                  <span class="profile-img" id="profileBtn" onclick="profileMenu()">JD</span>
+                </div>
+                <div class="profile-list" id="profile-list">
+                  <div><a href="./profile.html"><i class="ri-user-3-line"></i>&nbsp; Profile</a></div>
+                  <div><a href="./pricing-plan.html"><i class="ri-price-tag-3-line"></i>&nbsp; Pricing Plan</a></div>
+                  <div><a href="./payment-details.html"><i class="ri-bank-card-2-line"></i>&nbsp; Payment Details</a></div>
+                  <div><a href="./history.html"><i class="ri-history-line"></i>&nbsp; History</a></div>
+                  <div><a href="./login.html"><i class="ri-logout-box-line"></i>&nbsp; Logout</a></div>
+                </div>
               </li>
             </ul>
+            <i class="ri-menu-line" id="hamburger"></i>
           </div>
         </div>
       </div>
@@ -336,6 +353,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script>
+      function profileMenu(){
+        const profile = document.getElementById('profile-list')
+        console.log("hellllllllllo")
+
+        profile.classList.toggle('show-list')
+      }
+
+
+      document.addEventListener('click', function(){
+        const profileMenuBtn = document.getElementById('profileBtn')
+
+        if(!profileMenuBtn.contains(event.target)){
+          const profile = document.getElementById('profile-list')
+          profile.classList.remove('show-list')
+        }
+      })
+
+      const profile = document.getElementById('profile-list')
+      profile.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+
+    </script>
 
     <script>
       function btnDownload(index) {
