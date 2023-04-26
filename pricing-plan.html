@@ -43,23 +43,20 @@
               alt=""
             /></a>
             <ul
-              class="header__container__row__col__nav d-flex align-content-center gap-4 list-unstyled mt-3"
+              class="header__container__row__col__nav mt-3" id="navigation"
             >
               <li>
-                <a href="./index.html"
-                  ><i class="ri-mic-line"></i>&ensp;Instant</a
-                >
+                <a href="/"><img src="./images/logo.png"
+                  alt="logo"
+                /></a>
               </li>
-              <li>
-                <a href="./upload.html"
-                  ><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</a
-                >
-              </li>
+              <li><a href="./index.html"><i class="ri-mic-line"></i>&ensp;Instant</a></li>
+              <li><a href="./upload.html"><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</a></li>
               <!-- <li><i class="ri-magic-line"></i>&ensp;Advance</li> -->
               <li>
                 <a href="./advance.html">
-                  <i class="fa-solid fa-wand-magic-sparkles sparkles"></i
-                  >&ensp;Advance
+                    <i class="fa-solid fa-wand-magic-sparkles sparkles"></i
+                    >&ensp;Advance
                 </a>
               </li>
               <li>
@@ -67,63 +64,37 @@
                   <i class="ri-eye-line"></i>&ensp;View
                 </a>
               </li>
-              <li>
+              <li class="last-item">
                 <a href="./profile.html">
                   <i class="ri-settings-3-line"></i>&ensp;Settings
                 </a>
               </li>
-              <!-- <li>Profile</li> -->
               <!-- <li class="profile">
-                <div>
-                  <span>Hours left</span>
-                  <span>05h:20m</span>
+                  <div class="time">
+                    <span>Hours left</span>
+                    <span>05h:20m</span>
+                  </div>
+                  <span class="profile-img">JD</span>
                 </div>
-                <span class="profile-img">JD</span>
               </li> -->
-              <li>
+              <li class="profile-li">
                 <div class="profile">
                   <div class="time">
                     <span>Hours left</span>
                     <span>05h:20m</span>
                   </div>
-                  <span
-                    class="profile-img"
-                    id="profileBtn"
-                    onclick="profileMenu()"
-                    >JD</span
-                  >
+                  <span class="profile-img" id="profileBtn" onclick="profileMenu()">JD</span>
                 </div>
                 <div class="profile-list" id="profile-list">
-                  <div>
-                    <a href="./profile.html"
-                      ><i class="ri-user-3-line"></i>&nbsp; Profile</a
-                    >
-                  </div>
-                  <div class="active">
-                    <a href="./pricing-plan.html"
-                      ><i class="ri-price-tag-3-line"></i>&nbsp; Pricing Plan</a
-                    >
-                  </div>
-                  <div>
-                    <a href="./payment-details.html"
-                      ><i class="ri-bank-card-2-line"></i>&nbsp; Payment
-                      Details</a
-                    >
-                  </div>
-                  <div>
-                    <a href="./history.html"
-                      ><i class="ri-history-line"></i>&nbsp; History</a
-                    >
-                  </div>
-                  <div>
-                    <a href="./login.html"
-                      ><i class="ri-logout-box-line"></i>&nbsp; Logout</a
-                    >
-                  </div>
+                  <div><a href="./profile.html"><i class="ri-user-3-line"></i>&nbsp; Profile</a></div>
+                  <div class="active"><a href="./pricing-plan.html"><i class="ri-price-tag-3-line"></i>&nbsp; Pricing Plan</a></div>
+                  <div><a href="./payment-details.html"><i class="ri-bank-card-2-line"></i>&nbsp; Payment Details</a></div>
+                  <div><a href="./history.html"><i class="ri-history-line"></i>&nbsp; History</a></div>
+                  <div><a href="./login.html"><i class="ri-logout-box-line"></i>&nbsp; Logout</a></div>
                 </div>
               </li>
             </ul>
-            <i class="ri-menu-line" id="hamburger"></i>
+            <i class="ri-menu-line" id="hamburger" onclick="toggleMenu()"></i>
           </div>
         </div>
       </div>
@@ -139,8 +110,8 @@
 
                 
                 <div
-                class="pricing-plan__container__row__col col col-md-4 col-lg-4">
-                    <div class="plan d-flex flex-column justify-content-center align-items-center gap-3 mt-5" id="basic-plan">
+                class="pricing-plan__container__row__col col1 col col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="plan d-flex flex-column justify-content-center align-items-center gap-3" id="basic-plan">
                         <button class="basic-plan" id="basic-btn-top">Basic Plan</button>
                         <div class="amount">20$<small>/per month</small></div>
                         <div class="points">
@@ -174,7 +145,7 @@
                 </div>
 
                 <div
-                class="pricing-plan__container__row__col col col-md-4 col-lg-4">
+                class="pricing-plan__container__row__col col2 col col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <div class="plan d-flex flex-column justify-content-center align-items-center gap-3" id="standard-plan">
                         <button class="basic-plan" id="standard-btn-top">Standard Plan</button>
                         <div class="amount">20$<small>/per month</small></div>
@@ -209,8 +180,8 @@
                 </div>
 
                 <div
-                class="pricing-plan__container__row__col col col-md-4 col-lg-4">
-                    <div class="plan d-flex flex-column justify-content-center align-items-center gap-3 mt-5" id="premium-plan">
+                class="pricing-plan__container__row__col col3 col col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="plan d-flex flex-column justify-content-center align-items-center gap-3" id="premium-plan">
                         <button class="basic-plan" id="premium-btn-top">Premium Plan</button>
                         <div class="amount">20$<small>/per month</small></div>
                         <div class="points">
@@ -282,26 +253,61 @@
     ></script>
 
     <script>
-      function profileMenu() {
-        const profile = document.getElementById("profile-list");
-        console.log("hellllllllllo");
 
-        profile.classList.toggle("show-list");
+      function toggleMenu(){
+        // const hamburger = document.getElementById('hamburger')
+        const nav = document.getElementById('navigation')
+        nav.classList.toggle('toggle-nav')
       }
 
-      document.addEventListener("click", function () {
-        const profileMenuBtn = document.getElementById("profileBtn");
+      
+      document.addEventListener('click', function(event){
+        const hamburger = document.getElementById('hamburger')
 
-        if (!profileMenuBtn.contains(event.target)) {
-          const profile = document.getElementById("profile-list");
-          profile.classList.remove("show-list");
+        if(!hamburger.contains(event.target)){
+          const nav = document.getElementById('navigation')
+          nav.classList.remove('toggle-nav')
         }
-      });
+      })
 
-      const profile = document.getElementById("profile-list");
-      profile.addEventListener("click", function (event) {
-        event.stopPropagation();
-      });
+      const nav = document.getElementById('navigation')
+
+      nav.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+
+      const profileBtn = document.getElementById('profileBtn')
+
+      profileBtn.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+
     </script>
+
+    <script>
+      function profileMenu(){
+        const profile = document.getElementById('profile-list')
+        console.log("hellllllllllo")
+
+        profile.classList.toggle('show-list')
+      }
+
+
+      document.addEventListener('click', function(){
+        const profileMenuBtn = document.getElementById('profileBtn')
+
+        if(!profileMenuBtn.contains(event.target)){
+          const profile = document.getElementById('profile-list')
+          profile.classList.remove('show-list')
+        }
+      })
+
+      const profile = document.getElementById('profile-list')
+      profile.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+
+    </script>
+
   </body>
 </html>

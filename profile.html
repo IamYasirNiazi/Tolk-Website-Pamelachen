@@ -43,8 +43,13 @@
               alt=""
             /></a>
             <ul
-              class="header__container__row__col__nav d-flex align-content-center gap-4 list-unstyled mt-3"
+              class="header__container__row__col__nav mt-3" id="navigation"
             >
+              <li>
+                <a href="/"><img src="./images/logo.png"
+                  alt="logo"
+                /></a>
+              </li>
               <li><a href="./index.html"><i class="ri-mic-line"></i>&ensp;Instant</a></li>
               <li><a href="./upload.html"><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</a></li>
               <!-- <li><i class="ri-magic-line"></i>&ensp;Advance</li> -->
@@ -59,7 +64,7 @@
                   <i class="ri-eye-line"></i>&ensp;View
                 </a>
               </li>
-              <li class="active">
+              <li class="last-item active">
                 <a href="./profile.html">
                   <i class="ri-settings-3-line"></i>&ensp;Settings
                 </a>
@@ -72,7 +77,7 @@
                   <span class="profile-img">JD</span>
                 </div>
               </li> -->
-              <li>
+              <li class="profile-li">
                 <div class="profile">
                   <div class="time">
                     <span>Hours left</span>
@@ -89,7 +94,7 @@
                 </div>
               </li>
             </ul>
-            <i class="ri-menu-line" id="hamburger"></i>
+            <i class="ri-menu-line" id="hamburger" onclick="toggleMenu()"></i>
           </div>
         </div>
       </div>
@@ -103,7 +108,7 @@
         <div class="profile__container container">
             <div class="profile__container__row row">
 
-                <div class="profile__container__row__col1 col col-md-5 col-lg-5 col1">
+                <div class="profile__container__row__col1 col col-md-6 col-lg-5 col-xl-5 col1">
                     <div class="edit-profile"><span>Edit Profile</span>&ensp;<i class="fa-solid fa-pen-to-square"></i></div>
                     
                     <div class="main">
@@ -112,7 +117,7 @@
                             <img src="./images/profile.png" alt="profile" class="img-fluid">
                             <h6>John Doe</h6>
                         </div>
-                        <div class="name d-flex align-items-start justify-content-between gap-3 flex-wrap">
+                        <div class="name d-flex align-items-start justify-content-between gap-3">
                             <label>
                                 <div>First Name</div>
                                 <input type="text">
@@ -140,7 +145,7 @@
                     </div>
 
                 </div>
-                <div class="profile__container__row__col2 col col-md-5 col-lg-5">
+                <div class="profile__container__row__col2 col col-md-6 col-lg-5 col-xl-5 col2">
                   <div class="main">
                     <h6>Payment Information</h6>
                     <div class="email">
@@ -159,13 +164,13 @@
                           </div>
                       </label>
                     </div>
-                    <div class="name d-flex align-items-start justify-content-between gap-3 flex-wrap">
+                    <div class="issue-exp-date d-flex align-items-start justify-content-between gap-3">
                         <label>
-                            <div>Issue Date</div>
+                            <div>Exp Date</div>
                             <input type="text">
                         </label>
                         <label>
-                            <div>Exp Date</div>
+                            <div>CSV</div>
                             <input type="text">
                         </label>
                     </div>
@@ -179,7 +184,7 @@
                       <label for="hour">
                         <div>Hours Remaining</div>
                       </label>
-                      <div class="d-flex align-items-center justify-content-between gap-3">
+                      <div class="d-flex align-items-center justify-content-between gap-3 hour-remaining">
                           <input type="text" id="hour">
                         <button class="hour-btn"><i class="ri-add-line"></i> Add Hours</button>
                       </div>
@@ -223,6 +228,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script>
+
+      function toggleMenu(){
+        // const hamburger = document.getElementById('hamburger')
+        const nav = document.getElementById('navigation')
+        nav.classList.toggle('toggle-nav')
+      }
+
+      
+      document.addEventListener('click', function(event){
+        const hamburger = document.getElementById('hamburger')
+
+        if(!hamburger.contains(event.target)){
+          const nav = document.getElementById('navigation')
+          nav.classList.remove('toggle-nav')
+        }
+      })
+
+      const nav = document.getElementById('navigation')
+
+      nav.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+
+      const profileBtn = document.getElementById('profileBtn')
+
+      profileBtn.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+
+    </script>
 
     <script>
       function profileMenu(){

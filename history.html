@@ -43,18 +43,15 @@
               alt=""
             /></a>
             <ul
-              class="header__container__row__col__nav d-flex align-content-center gap-4 list-unstyled mt-3"
+              class="header__container__row__col__nav mt-3" id="navigation"
             >
               <li>
-                <a href="./index.html"
-                  ><i class="ri-mic-line"></i>&ensp;Instant</a
-                >
+                <a href="/"><img src="./images/logo.png"
+                  alt="logo"
+                /></a>
               </li>
-              <li>
-                <a href="./upload.html"
-                  ><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</a
-                >
-              </li>
+              <li><a href="./index.html"><i class="ri-mic-line"></i>&ensp;Instant</a></li>
+              <li><a href="./upload.html"><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</a></li>
               <!-- <li><i class="ri-magic-line"></i>&ensp;Advance</li> -->
               <li>
                 <a href="./advance.html">
@@ -67,20 +64,20 @@
                   <i class="ri-eye-line"></i>&ensp;View
                 </a>
               </li>
-              <li>
+              <li class="last-item">
                 <a href="./profile.html">
                   <i class="ri-settings-3-line"></i>&ensp;Settings
                 </a>
               </li>
-              <!-- <li>Profile</li> -->
               <!-- <li class="profile">
-                <div>
-                  <span>Hours left</span>
-                  <span>05h:20m</span>
+                  <div class="time">
+                    <span>Hours left</span>
+                    <span>05h:20m</span>
+                  </div>
+                  <span class="profile-img">JD</span>
                 </div>
-                <span class="profile-img">JD</span>
               </li> -->
-              <li>
+              <li class="profile-li">
                 <div class="profile">
                   <div class="time">
                     <span>Hours left</span>
@@ -97,7 +94,7 @@
                 </div>
               </li>
             </ul>
-            <i class="ri-menu-line" id="hamburger"></i>
+            <i class="ri-menu-line" id="hamburger" onclick="toggleMenu()"></i>
           </div>
         </div>
       </div>
@@ -114,11 +111,13 @@
 
           <div class="first-row">
             <h5>History</h5>
-            <div>
-                <input type="text" class="text">
-                <input type="date" class="from">
-                <input type="date" class="to">
-                <button><i class="ri-search-line"></i></button>
+            <div class="input">
+                <input type="text" class="text" placeholder="Type keywords to search">
+                <div class="date">
+                  <input type="date" class="from" placeholder="">
+                  <input type="date" class="to" placeholder="">
+                  <button><i class="ri-search-line"></i></button>
+                </div>
             </div>
 
           </div>
@@ -271,6 +270,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script>
+
+      function toggleMenu(){
+        // const hamburger = document.getElementById('hamburger')
+        const nav = document.getElementById('navigation')
+        nav.classList.toggle('toggle-nav')
+      }
+
+      
+      document.addEventListener('click', function(event){
+        const hamburger = document.getElementById('hamburger')
+
+        if(!hamburger.contains(event.target)){
+          const nav = document.getElementById('navigation')
+          nav.classList.remove('toggle-nav')
+        }
+      })
+
+      const nav = document.getElementById('navigation')
+
+      nav.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+
+      const profileBtn = document.getElementById('profileBtn')
+
+      profileBtn.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+
+    </script>
 
     <script>
       function profileMenu(){
