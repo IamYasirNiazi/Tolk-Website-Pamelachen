@@ -1967,6 +1967,11 @@ section {
   }
 }
 
+@media (min-width: 200px) and (max-width: 575px) {
+  .payment-details {
+    padding: 2rem 1rem !important;
+  }
+}
 .payment-details__container__row {
   background-color: #fff;
   border-radius: 0.5rem;
@@ -1977,6 +1982,39 @@ section {
   align-items: flex-start;
   flex-wrap: wrap;
   position: relative;
+}
+@media (max-width: 575px) {
+  .payment-details__container__row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .payment-details__container__row {
+    gap: 6rem;
+    flex-direction: column;
+  }
+}
+@media (min-width: 200px) and (max-width: 430px) {
+  .payment-details__container__row {
+    padding: 2.5rem 0.5rem;
+  }
+}
+@media (min-width: 431px) and (max-width: 575px) {
+  .payment-details__container__row {
+    padding: 2.5rem 1.5rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .payment-details__container__row {
+    padding: 4rem 4rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .payment-details__container__row {
+    justify-content: center;
+    gap: 2rem;
+  }
 }
 .payment-details__container__row__col1 .main {
   display: flex;
@@ -2006,6 +2044,30 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 431px) {
+  .payment-details__container__row__col1 .main .date {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 430px) {
+  .payment-details__container__row__col1 .main .date label {
+    width: 100%;
+  }
+}
+@media (min-width: 431px) and (max-width: 767px) {
+  .payment-details__container__row__col1 .main .date label {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 1400px) {
+  .payment-details__container__row__col1 .main .date label {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
 }
 .payment-details__container__row__col1 .main .total {
   margin-top: 0.5rem;
@@ -2016,7 +2078,11 @@ section {
   align-items: center;
 }
 .payment-details__container__row__col1 .main .total div span {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
+}
+.payment-details__container__row__col1 .main .total div .dollar {
+  font-weight: 500;
+  font-size: 0.85rem;
 }
 .payment-details__container__row__col1 .main .btn-payment {
   margin-top: 0.7rem;
@@ -2031,7 +2097,7 @@ section {
   border: none;
 }
 .payment-details__container__row__col2 .plan {
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -2040,6 +2106,22 @@ section {
   border-radius: 0.5rem;
   background-color: #fff;
   box-shadow: 0px 0px 10px 3px rgba(34, 34, 34, 0.0823529412);
+}
+@media (max-width: 575px) {
+  .payment-details__container__row__col2 .plan {
+    width: 100%;
+    align-items: center;
+    justify-content: center !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .payment-details__container__row__col2 .plan {
+    margin-top: 4rem;
+    margin: auto !important;
+    width: 100%;
+    align-items: center;
+    justify-content: center !important;
+  }
 }
 .payment-details__container__row__col2 .plan .basic-plan {
   align-self: center;
@@ -2052,17 +2134,58 @@ section {
   border: none;
   transform: translateY(-120%);
 }
+@media (max-width: 575px) {
+  .payment-details__container__row__col2 .plan .basic-plan {
+    font-size: 0.75rem;
+  }
+}
 .payment-details__container__row__col2 .plan #basic-btn-top {
   background: #6AE4F1;
   color: #222;
+}
+@media (max-width: 575px) {
+  .payment-details__container__row__col2 .plan #basic-btn-top {
+    padding: 0.9rem 1rem !important;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .payment-details__container__row__col2 .plan #basic-btn-top {
+    padding: 0.9rem 1rem !important;
+    margin-top: 0.4rem;
+  }
 }
 .payment-details__container__row__col2 .plan #standard-btn-top {
   background: #FF4E1A !important;
   color: #fff;
 }
+@media (max-width: 575px) {
+  .payment-details__container__row__col2 .plan #standard-btn-top {
+    padding: 0.9rem 1rem !important;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .payment-details__container__row__col2 .plan #standard-btn-top {
+    padding: 0.9rem 1rem !important;
+    margin-top: 0.4rem;
+  }
+}
 .payment-details__container__row__col2 .plan #premium-btn-top {
   background: #FFCF00 !important;
   color: #222;
+}
+@media (max-width: 575px) {
+  .payment-details__container__row__col2 .plan #premium-btn-top {
+    padding: 0.9rem 1rem !important;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .payment-details__container__row__col2 .plan #premium-btn-top {
+    padding: 0.9rem 1rem !important;
+    margin-top: 0.4rem;
+  }
 }
 .payment-details__container__row__col2 .plan .amount {
   margin-top: -1.5rem;
@@ -2072,6 +2195,11 @@ section {
 }
 .payment-details__container__row__col2 .plan .amount small {
   font-size: 0.75rem;
+}
+@media (max-width: 767px) {
+  .payment-details__container__row__col2 .plan .amount {
+    margin-top: -2rem !important;
+  }
 }
 .payment-details__container__row__col2 .plan .points .point {
   display: flex;
@@ -2086,6 +2214,11 @@ section {
   font-weight: 500;
   font-size: 0.7rem;
 }
+@media (min-width: 576px) and (max-width: 767px) {
+  .payment-details__container__row__col2 .plan .points .point span {
+    font-size: 0.8rem;
+  }
+}
 .payment-details__container__row__col2 .plan .select-plan {
   margin-top: 0.2rem;
   align-self: center;
@@ -2097,6 +2230,16 @@ section {
   outline: none;
   color: #FF4E1A;
   border: 2px solid #FF4E1A;
+}
+@media (max-width: 575px) {
+  .payment-details__container__row__col2 .plan .select-plan {
+    padding: 0.9rem 1rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .payment-details__container__row__col2 .plan .select-plan {
+    padding: 0.9rem 1rem !important;
+  }
 }
 
 .login-details {

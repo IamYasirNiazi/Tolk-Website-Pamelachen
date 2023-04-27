@@ -43,8 +43,13 @@
               alt=""
             /></a>
             <ul
-              class="header__container__row__col__nav d-flex align-content-center gap-4 list-unstyled mt-3"
+              class="header__container__row__col__nav mt-3" id="navigation"
             >
+              <li>
+                <a href="/"><img src="./images/logo.png"
+                  alt="logo"
+                /></a>
+              </li>
               <li><a href="./index.html"><i class="ri-mic-line"></i>&ensp;Instant</a></li>
               <li><a href="./upload.html"><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</a></li>
               <!-- <li><i class="ri-magic-line"></i>&ensp;Advance</li> -->
@@ -59,7 +64,7 @@
                   <i class="ri-eye-line"></i>&ensp;View
                 </a>
               </li>
-              <li>
+              <li class="last-item">
                 <a href="./profile.html">
                   <i class="ri-settings-3-line"></i>&ensp;Settings
                 </a>
@@ -72,7 +77,7 @@
                   <span class="profile-img">JD</span>
                 </div>
               </li> -->
-              <li>
+              <li class="profile-li">
                 <div class="profile">
                   <div class="time">
                     <span>Hours left</span>
@@ -89,7 +94,7 @@
                 </div>
               </li>
             </ul>
-            <i class="ri-menu-line" id="hamburger"></i>
+            <i class="ri-menu-line" id="hamburger" onclick="toggleMenu()"></i>
           </div>
         </div>
       </div>
@@ -103,7 +108,7 @@
         <div class="payment-details__container container">
             <div class="payment-details__container__row row">
 
-                <div class="payment-details__container__row__col1 col col-md-5 col-lg-5 col1">
+                <div class="payment-details__container__row__col1 col col-md-5 col-lg-5 col-xl-5 col-xxl-5 col1">
                     
                     <div class="main">
                       <div class="email">
@@ -120,7 +125,7 @@
                             <input type="text" class="w-100">
                         </label>
                       </div>
-                      <div class="date d-flex align-items-start justify-content-between gap-3 flex-wrap">
+                      <div class="date d-flex align-items-start justify-content-between gap-3">
                         <label>
                             <div>Issue Date</div>
                             <input type="text">
@@ -133,22 +138,23 @@
                       <div class="total">
                         <div>
                           <span>Sub Total</span>
-                          <span>$30</span>
+                          <span class="dollar">$30</span>
                         </div>
                         <div>
                           <span>Tax</span>
-                          <span>$3</span>
+                          <span class="dollar">$3</span>
                         </div>
                         <div>
                           <span>Total Due</span>
-                          <span>$33</span>
+                          <span class="dollar">$33</span>
                         </div>
                       </div>
                       <button class="btn-payment">Make Payment</button>
                   </div>
 
                 </div>
-                <div class="payment-details__container__row__col2 col col-md-5 col-lg-5">
+                
+                <div class="payment-details__container__row__col2 col col-md-5 col-lg-5 col-xl-4 col-xxl-4 col2">
                     <div class="plan d-flex flex-column justify-content-center align-items-center gap-3 mt-5" id="basic-plan">
                         <button class="basic-plan" id="basic-btn-top">Basic Plan</button>
                         <div class="amount">20$<small>/per month</small></div>
@@ -218,6 +224,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script>
+
+      function toggleMenu(){
+        // const hamburger = document.getElementById('hamburger')
+        const nav = document.getElementById('navigation')
+        nav.classList.toggle('toggle-nav')
+      }
+
+      
+      document.addEventListener('click', function(event){
+        const hamburger = document.getElementById('hamburger')
+
+        if(!hamburger.contains(event.target)){
+          const nav = document.getElementById('navigation')
+          nav.classList.remove('toggle-nav')
+        }
+      })
+
+      const nav = document.getElementById('navigation')
+
+      nav.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+
+      const profileBtn = document.getElementById('profileBtn')
+
+      profileBtn.addEventListener('click', function(event){
+        event.stopPropagation()
+      })
+
+    </script>
 
     <script>
       function profileMenu(){
