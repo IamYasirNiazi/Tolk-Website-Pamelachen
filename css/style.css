@@ -8,6 +8,12 @@ body {
   background-color: #F3F3F3 !important;
 }
 
+input[type=date]::before {
+  position: absolute;
+  background: url(../images/calendar.svg);
+  border: 1px solid red;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
