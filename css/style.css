@@ -36,6 +36,9 @@ body {
 @media (max-width: 767px) {
   input[type=date]:focus {
     content: "";
+    outline: none;
+    border: none;
+    box-shadow: none;
   }
 }
 

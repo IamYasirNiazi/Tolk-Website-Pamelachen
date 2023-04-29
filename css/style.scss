@@ -58,6 +58,10 @@ input[type="date"]::before{
 input[type="date"]:focus{
     @media (max-width:767px) {
         content: '';
+        outline: none;
+        border: none;
+        // background: none;
+        box-shadow: none;
     }
 }
 
