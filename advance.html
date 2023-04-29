@@ -415,9 +415,9 @@
       var from = document.getElementById("from");
       from.addEventListener("click", function () {
         if (!hasBeenClickedFrom) {
+          var from = document.getElementById("from");
+          from.type = "date";
           hasBeenClickedFrom = true;
-        var from = document.getElementById("from");
-        from.type = "date";
         }
       });
     </script>
@@ -427,9 +427,9 @@
       var to = document.getElementById("to");
       to.addEventListener("click", function () {
         if (!hasBeenClickedTo) {
-          hasBeenClickedTo = true;
           var to = document.getElementById("to");
           to.type = "date";
+          hasBeenClickedTo = true;
         }
       });
     </script>

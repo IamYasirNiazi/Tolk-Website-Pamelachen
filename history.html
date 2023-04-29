@@ -114,8 +114,8 @@
             <div class="input">
                 <input type="text" class="text" placeholder="Type keywords to search">
                 <div class="date">
-                  <input type="date" class="from" placeholder="">
-                  <input type="date" class="to" placeholder="">
+                  <input type="text" class="from" placeholder="From" id="from">
+                  <input type="text" class="to" placeholder="To" id="to">
                   <button><i class="ri-search-line"></i></button>
                 </div>
             </div>
@@ -270,6 +270,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+
+    <script>
+      var hasBeenClickedFrom = false;
+      var from = document.getElementById("from");
+      from.addEventListener("click", function () {
+        if (!hasBeenClickedFrom) {
+          var from = document.getElementById("from");
+          from.type = "date";
+          hasBeenClickedFrom = true;
+        }
+      });
+    </script>
+
+    <script>
+      var hasBeenClickedTo = false;
+      var to = document.getElementById("to");
+      to.addEventListener("click", function () {
+        if (!hasBeenClickedTo) {
+          var to = document.getElementById("to");
+          to.type = "date";
+          hasBeenClickedTo = true;
+        }
+      });
+    </script>
+
 
     <script>
 
