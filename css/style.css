@@ -8,6 +8,15 @@ body {
   background-color: #F3F3F3 !important;
 }
 
+input[type=date]::before {
+  color: #292929;
+  content: attr(placeholder) ": ";
+}
+
+input[type=date]:focus::before {
+  content: "" !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
