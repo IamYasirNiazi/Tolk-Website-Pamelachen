@@ -37,26 +37,31 @@
           <div
             class="header__container__row__col col col-md-12 col-lg-12 d-flex justify-content-between align-content-center p-2"
           >
-            <a href="/"><img
-              class="header__container__row__col__img"
-              src="./images/logo.png"
-              alt=""
+            <a href="/"
+              ><img
+                class="header__container__row__col__img"
+                src="./images/logo.png"
+                alt=""
             /></a>
-            <ul
-              class="header__container__row__col__nav mt-3" id="navigation"
-            >
+            <ul class="header__container__row__col__nav mt-3" id="navigation">
               <li>
-                <a href="/"><img src="./images/logo.png"
-                  alt="logo"
-                /></a>
+                <a href="/"><img src="./images/logo.png" alt="logo" /></a>
               </li>
-              <li><a href="./index.html"><i class="ri-mic-line"></i>&ensp;Instant</a></li>
-              <li><a href="./upload.html"><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</a></li>
+              <li>
+                <a href="./index.html"
+                  ><i class="ri-mic-line"></i>&ensp;Instant</a
+                >
+              </li>
+              <li>
+                <a href="./upload.html"
+                  ><i class="ri-upload-cloud-2-line"></i>&ensp;Upload</a
+                >
+              </li>
               <!-- <li><i class="ri-magic-line"></i>&ensp;Advance</li> -->
               <li class="active">
                 <a href="./advance.html">
-                    <i class="fa-solid fa-wand-magic-sparkles sparkles"></i
-                    >&ensp;Advance
+                  <i class="fa-solid fa-wand-magic-sparkles sparkles"></i
+                  >&ensp;Advance
                 </a>
               </li>
               <li>
@@ -83,14 +88,40 @@
                     <span>Hours left</span>
                     <span>05h:20m</span>
                   </div>
-                  <span class="profile-img" id="profileBtn" onclick="profileMenu()">JD</span>
+                  <span
+                    class="profile-img"
+                    id="profileBtn"
+                    onclick="profileMenu()"
+                    >JD</span
+                  >
                 </div>
                 <div class="profile-list" id="profile-list">
-                  <div><a href="./profile.html"><i class="ri-user-3-line"></i>&nbsp; Profile</a></div>
-                  <div><a href="./pricing-plan.html"><i class="ri-price-tag-3-line"></i>&nbsp; Pricing Plan</a></div>
-                  <div><a href="./payment-details.html"><i class="ri-bank-card-2-line"></i>&nbsp; Payment Details</a></div>
-                  <div><a href="./history.html"><i class="ri-history-line"></i>&nbsp; History</a></div>
-                  <div><a href="./login.html"><i class="ri-logout-box-line"></i>&nbsp; Logout</a></div>
+                  <div>
+                    <a href="./profile.html"
+                      ><i class="ri-user-3-line"></i>&nbsp; Profile</a
+                    >
+                  </div>
+                  <div>
+                    <a href="./pricing-plan.html"
+                      ><i class="ri-price-tag-3-line"></i>&nbsp; Pricing Plan</a
+                    >
+                  </div>
+                  <div>
+                    <a href="./payment-details.html"
+                      ><i class="ri-bank-card-2-line"></i>&nbsp; Payment
+                      Details</a
+                    >
+                  </div>
+                  <div>
+                    <a href="./history.html"
+                      ><i class="ri-history-line"></i>&nbsp; History</a
+                    >
+                  </div>
+                  <div>
+                    <a href="./login.html"
+                      ><i class="ri-logout-box-line"></i>&nbsp; Logout</a
+                    >
+                  </div>
                 </div>
               </li>
             </ul>
@@ -108,217 +139,244 @@
           <div
             class="advance-screen__container__row1__col col col-md-12 col-lg-12"
           >
-
-          <div class="first-row">
-            <h5>Advance</h5>
-            <div class="input">
-                <input type="text" class="text" placeholder="Type keywords to search">
+            <div class="first-row">
+              <h5>Advance</h5>
+              <div class="input">
+                <input
+                  type="text"
+                  class="text"
+                  placeholder="Type keywords to search"
+                />
                 <div class="date">
-                  <input type="date" class=" from" id="from" onclick="changeInputTypeFrom()" placeholder="From">
-                  <input type="date" class="to" id="to" onclick="changeInputTypeTo()" placeholder="To">
+                  <input
+                    type="text"
+                    class="from"
+                    id="from"
+                    placeholder="From"
+                  />
+                  <input
+                    type="text"
+                    class="to"
+                    id="to"
+                    placeholder="To"
+                  />
                   <button><i class="ri-search-line"></i></button>
                 </div>
+              </div>
             </div>
-
           </div>
         </div>
-    </div>
 
-
-    <div
+        <div
           class="advance-screen__container__row2 row d-flex justify-content-center flex-wrap"
         >
           <div
             class="advance-screen__container__row2__col col col-md-11 col-lg-11"
           >
-
-          
-          <div class="second-row">
-            <table class="">
+            <div class="second-row">
+              <table class="">
                 <tr class="heading">
-                    <th>Date</th>
-                    <th>File Name</th>
-                    <th>View</th>
-                    <th>Summary</th>
-                    <th>Essay</th>
-                    <th>Press Release</th>
-                    <th>Edit</th>
+                  <th>Date</th>
+                  <th>File Name</th>
+                  <th>View</th>
+                  <th>Summary</th>
+                  <th>Essay</th>
+                  <th>Press Release</th>
+                  <th>Edit</th>
                 </tr>
 
                 <tr>
-                    <td>04/13/2023</td>
-                    <td>Drama Script One</td>
-                    <td><i class="ri-eye-line view"></i></td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-pen-to-square edit"  data-bs-toggle="modal" data-bs-target="#editModal"></i>
-                    </td>
+                  <td>04/13/2023</td>
+                  <td>Drama Script One</td>
+                  <td><i class="ri-eye-line view"></i></td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <i
+                      class="fa-solid fa-pen-to-square edit"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editModal"
+                    ></i>
+                  </td>
                 </tr>
                 <tr>
-                    <td>04/13/2023</td>
-                    <td>Drama Script One</td>
-                    <td><i class="ri-eye-line view"></i></td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-pen-to-square edit"  data-bs-toggle="modal" data-bs-target="#editModal"></i>
-                    </td>
+                  <td>04/13/2023</td>
+                  <td>Drama Script One</td>
+                  <td><i class="ri-eye-line view"></i></td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <i
+                      class="fa-solid fa-pen-to-square edit"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editModal"
+                    ></i>
+                  </td>
                 </tr>
                 <tr>
-                    <td>04/13/2023</td>
-                    <td>Drama Script One</td>
-                    <td><i class="ri-eye-line view"></i></td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-pen-to-square edit"  data-bs-toggle="modal" data-bs-target="#editModal"></i>
-                    </td>
+                  <td>04/13/2023</td>
+                  <td>Drama Script One</td>
+                  <td><i class="ri-eye-line view"></i></td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <i
+                      class="fa-solid fa-pen-to-square edit"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editModal"
+                    ></i>
+                  </td>
                 </tr>
                 <tr>
-                    <td>04/13/2023</td>
-                    <td>Drama Script One</td>
-                    <td><i class="ri-eye-line view"></i></td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-pen-to-square edit"  data-bs-toggle="modal" data-bs-target="#editModal"></i>
-                    </td>
+                  <td>04/13/2023</td>
+                  <td>Drama Script One</td>
+                  <td><i class="ri-eye-line view"></i></td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <i
+                      class="fa-solid fa-pen-to-square edit"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editModal"
+                    ></i>
+                  </td>
                 </tr>
                 <tr>
-                    <td>04/13/2023</td>
-                    <td>Drama Script One</td>
-                    <td><i class="ri-eye-line view"></i></td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <input type="checkbox" class="input">&nbsp;
-                        <i class="ri-download-cloud-2-line"></i>&nbsp;
-                        <i class="fa-regular fa-arrow-rotate-right"></i>
-                        
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-pen-to-square edit"  data-bs-toggle="modal" data-bs-target="#editModal"></i>
-                    </td>
+                  <td>04/13/2023</td>
+                  <td>Drama Script One</td>
+                  <td><i class="ri-eye-line view"></i></td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <input type="checkbox" class="input" />&nbsp;
+                    <i class="ri-download-cloud-2-line"></i>&nbsp;
+                    <i class="fa-regular fa-arrow-rotate-right"></i>
+                  </td>
+                  <td>
+                    <i
+                      class="fa-solid fa-pen-to-square edit"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editModal"
+                    ></i>
+                  </td>
                 </tr>
-                
-                
-            </table>
-          </div>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-
     <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Launch demo modal
   </button> -->
-  
-  <!-- Modal -->
-  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <section class="modal-content">
-        <!-- <div class="modal-header">
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <section class="modal-content">
+          <!-- <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Edit</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div> -->
-        <div class="modal-body">
-          <div class="main d-flex flex-column gap-4">
-            <div class="d-flex align-items-center gap-5">
+          <div class="modal-body">
+            <div class="main d-flex flex-column gap-4">
+              <div class="d-flex align-items-center gap-5 edit">
                 <h5 class="fw-semibold">Edit</h5>
                 <audio controls loop autoplay>
-                    <source src="" type="">  
-                        Your browser does not support the html audio tag.  
+                  <source src="" type="" />
+                  Your browser does not support the html audio tag.
                 </audio>
-            </div>
-            <div class="w-100 textarea-div">
-                <textarea rows="15" class="w-100" placeholder="Type or paste in your source material here"></textarea>
+              </div>
+              <div class="w-100 textarea-div">
+                <textarea
+                  rows="15"
+                  class="w-100"
+                  placeholder="Type or paste in your source material here"
+                ></textarea>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-save">Save</button>
-        </div>
-      </section>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-cancel"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-save">Save</button>
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"
@@ -352,76 +410,80 @@
       referrerpolicy="no-referrer"
     ></script>
 
-
-
     <script>
-      function changeInputTypeFrom() {
-        document.getElementById("from").type = "date";
-      }
-
-      function changeInputTypeTo() {
-        document.getElementById("to").type = "date";
-      }
+      var hasBeenClickedFrom = false;
+      var from = document.getElementById("from");
+      from.addEventListener("click", function () {
+        if (!hasBeenClickedFrom) {
+          hasBeenClickedFrom = true;
+        var from = document.getElementById("from");
+        from.type = "date";
+        }
+      });
     </script>
 
-
+    <script>
+      var hasBeenClickedTo = false;
+      var to = document.getElementById("to");
+      to.addEventListener("click", function () {
+        if (!hasBeenClickedTo) {
+          hasBeenClickedTo = true;
+          var to = document.getElementById("to");
+          to.type = "date";
+        }
+      });
+    </script>
 
     <script>
-
-      function toggleMenu(){
+      function toggleMenu() {
         // const hamburger = document.getElementById('hamburger')
-        const nav = document.getElementById('navigation')
-        nav.classList.toggle('toggle-nav')
+        const nav = document.getElementById("navigation");
+        nav.classList.toggle("toggle-nav");
       }
 
-      
-      document.addEventListener('click', function(event){
-        const hamburger = document.getElementById('hamburger')
+      document.addEventListener("click", function (event) {
+        const hamburger = document.getElementById("hamburger");
 
-        if(!hamburger.contains(event.target)){
-          const nav = document.getElementById('navigation')
-          nav.classList.remove('toggle-nav')
+        if (!hamburger.contains(event.target)) {
+          const nav = document.getElementById("navigation");
+          nav.classList.remove("toggle-nav");
         }
-      })
+      });
 
-      const nav = document.getElementById('navigation')
+      const nav = document.getElementById("navigation");
 
-      nav.addEventListener('click', function(event){
-        event.stopPropagation()
-      })
+      nav.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
 
-      const profileBtn = document.getElementById('profileBtn')
+      const profileBtn = document.getElementById("profileBtn");
 
-      profileBtn.addEventListener('click', function(event){
-        event.stopPropagation()
-      })
-
+      profileBtn.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
     </script>
 
     <script>
-      function profileMenu(){
-        const profile = document.getElementById('profile-list')
-        console.log("hellllllllllo")
+      function profileMenu() {
+        const profile = document.getElementById("profile-list");
+        console.log("hellllllllllo");
 
-        profile.classList.toggle('show-list')
+        profile.classList.toggle("show-list");
       }
 
+      document.addEventListener("click", function () {
+        const profileMenuBtn = document.getElementById("profileBtn");
 
-      document.addEventListener('click', function(){
-        const profileMenuBtn = document.getElementById('profileBtn')
-
-        if(!profileMenuBtn.contains(event.target)){
-          const profile = document.getElementById('profile-list')
-          profile.classList.remove('show-list')
+        if (!profileMenuBtn.contains(event.target)) {
+          const profile = document.getElementById("profile-list");
+          profile.classList.remove("show-list");
         }
-      })
+      });
 
-      const profile = document.getElementById('profile-list')
-      profile.addEventListener('click', function(event){
-        event.stopPropagation()
-      })
-
+      const profile = document.getElementById("profile-list");
+      profile.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
     </script>
-
   </body>
 </html>

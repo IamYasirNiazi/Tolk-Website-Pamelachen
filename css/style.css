@@ -1264,6 +1264,13 @@ section {
   }
 }
 
+@media (max-width: 500px) {
+  .edit {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .textarea-div {
   width: 100%;
 }
@@ -1276,6 +1283,11 @@ section {
   border-radius: 0.5rem;
   border: 1px solid transparent;
   font-size: 0.75rem;
+}
+@media (max-width: 500px) {
+  .textarea-div textarea {
+    margin-top: 1rem;
+  }
 }
 .textarea-div textarea:focus {
   outline: none !important;
