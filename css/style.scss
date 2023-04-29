@@ -38,12 +38,12 @@ body {
 //     content: "" !important;
 //  }
 
-input[type="date"]{
+.to-wrapper{
     position: relative;
 }
 
 
-input[type="date"]::before{
+.to-wrapper::before{
     @media (max-width:767px) {
         position: absolute;
         // content: '';
@@ -57,6 +57,20 @@ input[type="date"]::before{
     }
 }
 
+
+input[type="date"]::before{
+    @media (max-width:767px) {
+        // position: absolute;
+        // content: '';
+        color: #292929;
+    content: attr(placeholder);
+        // top: .8rem;
+        // left: 1.1rem;
+        // background: url(../images/calendar.svg);
+        // width: .95rem;
+        // height: .95rem;
+    }
+}
 
 input[type="date"]:focus{
     @media (max-width:767px) {

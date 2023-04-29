@@ -8,12 +8,12 @@ body {
   background-color: #F3F3F3 !important;
 }
 
-input[type=date] {
+.to-wrapper {
   position: relative;
 }
 
 @media (max-width: 767px) {
-  input[type=date]::before {
+  .to-wrapper::before {
     position: absolute;
     color: #292929;
     content: attr(placeholder);
@@ -22,6 +22,13 @@ input[type=date] {
     background: url(../images/calendar.svg);
     width: 0.95rem;
     height: 0.95rem;
+  }
+}
+
+@media (max-width: 767px) {
+  input[type=date]::before {
+    color: #292929;
+    content: attr(placeholder);
   }
 }
 
