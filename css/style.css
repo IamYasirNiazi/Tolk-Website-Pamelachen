@@ -253,10 +253,18 @@ section {
 }
 
 .translate-screen__container__row {
+  position: relative;
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0px 3px 10px 1px rgba(34, 34, 34, 0.0745098039);
   padding: 5rem 1rem;
+}
+@media (min-width: 100px) and (max-width: 767px) {
+  .translate-screen__container__row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 @media (max-width: 991px) {
   .translate-screen__container__row {
@@ -285,16 +293,9 @@ section {
   color: #fff;
   cursor: pointer;
 }
-@media (max-width: 359px) {
+@media (max-width: 767px) {
   .translate-screen__container__row__col1 .source-language {
-    width: 12rem !important;
-    font-size: 0.7rem;
-  }
-}
-@media (min-width: 360px) and (max-width: 575px) {
-  .translate-screen__container__row__col1 .source-language {
-    width: 14rem !important;
-    font-size: 0.75rem;
+    width: 100% !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -346,6 +347,11 @@ section {
   width: 100%;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .translate-screen__container__row__col1 .content {
+    margin-top: 9rem !important;
+  }
+}
 .translate-screen__container__row__col1 .content h6 {
   font-size: 0.9rem;
 }
@@ -381,17 +387,17 @@ section {
   opacity: 0.5;
   font-size: 0.75rem;
 }
-.translate-screen__container__row__col2 {
-  position: relative;
-}
 .translate-screen__container__row__col2 .select {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .translate-screen__container__row__col2 .select {
-    margin-top: 1rem;
+    position: absolute;
+    top: 5rem;
+    right: 0rem;
+    width: 100%;
   }
 }
 .translate-screen__container__row__col2 .select .target-language {
@@ -407,16 +413,14 @@ section {
 }
 @media (max-width: 359px) {
   .translate-screen__container__row__col2 .select .target-language {
-    margin-top: 0.5rem;
-    width: 12rem !important;
-    font-size: 0.7rem;
+    margin: 2rem 1.7rem;
+    width: 100% !important;
   }
 }
-@media (min-width: 360px) and (max-width: 575px) {
+@media (min-width: 360px) and (max-width: 767px) {
   .translate-screen__container__row__col2 .select .target-language {
-    margin-top: 1rem;
-    width: 14rem !important;
-    font-size: 0.75rem;
+    width: 100% !important;
+    margin: 2rem 1.7rem;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -476,14 +480,23 @@ section {
   .translate-screen__container__row__col2 .select .btn1 {
     position: absolute !important;
     z-index: 10;
-    bottom: -4rem !important;
+    left: 1.6rem;
+    top: 6rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .translate-screen__container__row__col2 .select .btn1 {
+    position: absolute !important;
+    z-index: 10;
+    left: 30%;
+    top: 6rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .translate-screen__container__row__col2 .select .btn1 {
     position: absolute !important;
     z-index: 10;
-    bottom: -3.5rem !important;
+    bottom: 1.7rem !important;
   }
 }
 .translate-screen__container__row__col2 .select .btn1 i#mic {
@@ -506,16 +519,24 @@ section {
   .translate-screen__container__row__col2 .select .btn2 {
     position: absolute !important;
     z-index: 10;
-    left: 4.2rem;
-    bottom: -4rem !important;
+    left: 5rem !important;
+    top: 6rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .translate-screen__container__row__col2 .select .btn2 {
+    position: absolute !important;
+    z-index: 10;
+    left: 40%;
+    top: 6rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .translate-screen__container__row__col2 .select .btn2 {
     position: absolute !important;
     z-index: 10;
-    left: 4.2rem;
-    bottom: -3.5rem !important;
+    left: 62%;
+    bottom: 1.7rem !important;
   }
 }
 .translate-screen__container__row__col2 .select .btn2 i {
@@ -528,19 +549,28 @@ section {
 }
 @media (max-width: 575px) {
   .translate-screen__container__row__col2 .select .recording {
+    width: 4.6rem;
     position: absolute !important;
     z-index: 10;
-    left: 7.6rem;
-    bottom: -3.9rem !important;
-    width: 4.5rem;
+    left: 8.5rem;
+    top: 6.1rem !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .translate-screen__container__row__col2 .select .recording {
+    width: 4.6rem;
+    position: absolute !important;
+    z-index: 10;
+    left: 50%;
+    top: 6.1rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .translate-screen__container__row__col2 .select .recording {
     position: absolute !important;
     z-index: 10;
-    left: 7.6rem;
-    bottom: -3.4rem !important;
+    left: 69.8%;
+    bottom: 1.8rem !important;
     width: 4.5rem;
   }
 }
