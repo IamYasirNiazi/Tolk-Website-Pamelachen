@@ -12,6 +12,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.date-picker {
+  width: 100%;
+  display: inline-block;
+  background: rgba(40, 40, 250, 0.1);
+  min-width: 10rem;
+  min-height: 2rem;
+  border-radius: 0.35rem;
+  position: relative;
+  isolation: isolate;
+}
+
+.date-picker,
+.date-picker > * {
+  cursor: text;
+  font-size: 1.2rem;
+}
+
+.date-picker:hover {
+  background: rgba(40, 40, 250, 0.28);
+}
+
+.date-picker:active {
+  background: rgba(40, 40, 250, 0.2);
+}
+
+.date-picker:focus > input[type=date],
+.date-picker:focus-within > input[type=date] {
+  color: #00f;
+}
+
 i {
   cursor: pointer;
 }
