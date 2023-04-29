@@ -11,12 +11,17 @@ body {
 .to-wrapper {
   position: relative;
 }
+@media (max-width: 767px) {
+  .to-wrapper label {
+    display: none;
+  }
+}
 
 @media (max-width: 767px) {
   .to-wrapper::before {
     position: absolute;
     color: #292929;
-    content: attr(placeholder);
+    content: "";
     top: 1.7rem;
     right: 1.1rem;
     background: url(../images/calendar.svg);
@@ -1064,6 +1069,11 @@ section {
     gap: 0.6rem;
   }
 }
+@media (min-width: 768px) {
+  .advance-screen__container__row1__col div.first-row {
+    margin-top: 1.5rem;
+  }
+}
 .advance-screen__container__row1__col div.first-row h5 {
   font-weight: 600;
 }
@@ -1137,6 +1147,16 @@ section {
     padding: 0.8rem 0rem;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .advance-screen__container__row1__col div.first-row div.input div.date {
+    margin-top: -1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .advance-screen__container__row1__col div.first-row div.input div.date {
+    margin-top: -1.5rem;
+  }
+}
 @media (min-width: 480px) and (max-width: 767px) {
   .advance-screen__container__row1__col div.first-row div.input div.date {
     margin-top: 1rem;
@@ -1196,21 +1216,24 @@ section {
 }
 @media (max-width: 767px) {
   .advance-screen__container__row1__col div.first-row div.input div.date button {
-    padding: 0.4rem 0.7rem;
+    padding: 0.9rem 1.3rem;
     border-radius: 0.4rem;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .advance-screen__container__row1__col div.first-row div.input div.date button {
     padding: 0.65rem 1rem;
     border-radius: 0.4rem;
-    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 992px) {
   .advance-screen__container__row1__col div.first-row div.input div.date button {
     padding: 0.65rem 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 .advance-screen__container__row2 {
@@ -1340,7 +1363,7 @@ section {
 @media (max-width: 370px) {
   .btn-cancel {
     font-size: 0.8rem !important;
-    padding: 0.7rem 1.8rem !important;
+    padding: 0.7rem 1.7rem !important;
   }
 }
 
@@ -1353,7 +1376,7 @@ section {
 @media (max-width: 370px) {
   .btn-save {
     font-size: 0.8rem !important;
-    padding: 0.7rem 1.8rem !important;
+    padding: 0.7rem 1.7rem !important;
   }
 }
 
@@ -1785,6 +1808,11 @@ section {
     gap: 0.6rem;
   }
 }
+@media (min-width: 768px) {
+  .history-screen__container__row1__col div.first-row {
+    margin-top: 1.5rem;
+  }
+}
 .history-screen__container__row1__col div.first-row h5 {
   font-weight: 600;
 }
@@ -1858,6 +1886,16 @@ section {
     padding: 0.8rem 0rem;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .history-screen__container__row1__col div.first-row div.input div.date {
+    margin-top: -1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .history-screen__container__row1__col div.first-row div.input div.date {
+    margin-top: -1.5rem;
+  }
+}
 @media (min-width: 480px) and (max-width: 767px) {
   .history-screen__container__row1__col div.first-row div.input div.date {
     margin-top: 1rem;
@@ -1917,21 +1955,24 @@ section {
 }
 @media (max-width: 767px) {
   .history-screen__container__row1__col div.first-row div.input div.date button {
-    padding: 0.4rem 0.7rem;
+    padding: 0.9rem 1.3rem;
     border-radius: 0.4rem;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .history-screen__container__row1__col div.first-row div.input div.date button {
     padding: 0.65rem 1rem;
     border-radius: 0.4rem;
-    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 992px) {
   .history-screen__container__row1__col div.first-row div.input div.date button {
     padding: 0.65rem 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 .history-screen__container__row2 {

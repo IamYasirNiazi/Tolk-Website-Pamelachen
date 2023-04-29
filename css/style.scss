@@ -32,6 +32,12 @@ body {
 
 .to-wrapper{
     position: relative;
+
+    @media (max-width:767px){
+        label{
+            display: none;
+        }
+    }
 }
 
 
@@ -39,7 +45,7 @@ body {
     @media (max-width:767px) {
         position: absolute;
         color: #292929;
-    content: attr(placeholder);
+        content: '';
         top: 1.7rem;
         right: 1.1rem;
         background: url(../images/calendar.svg);
@@ -1312,6 +1318,12 @@ section {
                         gap: .6rem;
                     }
 
+                    @media (min-width:768px){
+                        // 
+                        margin-top: 1.5rem;
+                        //
+                    }
+
                     h5 {
                         font-weight: 600;
 
@@ -1384,7 +1396,15 @@ section {
                             }
 
                             @media (min-width:768px) and (max-width:991px){
+                                // 
+                                margin-top: -1.5rem;
+                                //
+                            }
 
+                            @media(min-width:992px){
+                                // 
+                                margin-top: -1.5rem;
+                                //
                             }
 
                             @media (min-width:480px) and (max-width:767px){
@@ -1454,19 +1474,32 @@ section {
                                 }
 
                                 @media (max-width:767px){
-                                    padding: .4rem .7rem;
+                                    // padding: .4rem .7rem;
+                                    // border-radius: .4rem;
+                                    // font-size: 1.3rem;
+
+                                    padding: .9rem 1.3rem;
                                     border-radius: .4rem;
-                                    font-size: 1.3rem;
+                                    font-size: 1.7rem;
                                 }
 
                                 @media (min-width:768px) and (max-width:991px){
                                     padding: .65rem 1rem;
                                     border-radius: .4rem;
-                                    font-size: 1rem;
+                                    // font-size: 1rem;
+                                    
+                                    // 
+                                    margin-top: 1.5rem;
+                                    font-size: 1.1rem;
+                                    // 
                                 }
 
                                 @media (min-width:992px){
                                     padding: .65rem 1rem;
+                                    // 
+                                    margin-top: 1.5rem;
+                                    font-size: 1.1rem;
+                                    // 
                                 }
                             }
                         }
@@ -1635,7 +1668,7 @@ section {
 
     @media (max-width:370px){
         font-size: .8rem !important;
-        padding: .7rem 1.8rem !important;    
+        padding: .7rem 1.7rem !important;    
     }
 }
 
@@ -1647,7 +1680,7 @@ section {
 
     @media (max-width:370px){
         font-size: .8rem !important;
-        padding: .7rem 1.8rem !important;    
+        padding: .7rem 1.7rem !important;    
     }
 }
 
@@ -2172,6 +2205,13 @@ section {
                         gap: .6rem;
                     }
 
+                    @media (min-width:768px){
+                        // 
+                        margin-top: 1.5rem;
+                        //
+                    }
+
+
                     h5 {
                         font-weight: 600;
                     }
@@ -2244,7 +2284,15 @@ section {
                             }
 
                             @media (min-width:768px) and (max-width:991px){
+                                // 
+                                margin-top: -1.5rem;
+                                //
+                            }
 
+                            @media(min-width:992px){
+                                // 
+                                margin-top: -1.5rem;
+                                //
                             }
 
                             @media (min-width:480px) and (max-width:767px){
@@ -2314,19 +2362,32 @@ section {
                                 }
 
                                 @media (max-width:767px){
-                                    padding: .4rem .7rem;
+                                    // padding: .4rem .7rem;
+                                    // border-radius: .4rem;
+                                    // font-size: 1.3rem;
+
+                                    padding: .9rem 1.3rem;
                                     border-radius: .4rem;
-                                    font-size: 1.3rem;
+                                    font-size: 1.7rem;
                                 }
 
                                 @media (min-width:768px) and (max-width:991px){
                                     padding: .65rem 1rem;
                                     border-radius: .4rem;
-                                    font-size: 1rem;
+                                    // font-size: 1rem;
+                                    
+                                    // 
+                                    margin-top: 1.5rem;
+                                    font-size: 1.1rem;
+                                    // 
                                 }
 
                                 @media (min-width:992px){
                                     padding: .65rem 1rem;
+                                    // 
+                                    margin-top: 1.5rem;
+                                    font-size: 1.1rem;
+                                    // 
                                 }
                             }
                         }
