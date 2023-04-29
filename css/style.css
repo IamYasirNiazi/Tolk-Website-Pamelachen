@@ -8,10 +8,21 @@ body {
   background-color: #F3F3F3 !important;
 }
 
-input[type=date]::before {
-  position: absolute;
-  background: url(../images/calendar.svg);
-  border: 1px solid red;
+input[type=date] {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  input[type=date]::before {
+    position: absolute;
+    color: #292929;
+    content: attr(placeholder);
+    top: 1.1rem;
+    right: 1.1rem;
+    background: url(../images/calendar.svg);
+    width: 0.95rem;
+    height: 0.95rem;
+  }
 }
 
 code {
