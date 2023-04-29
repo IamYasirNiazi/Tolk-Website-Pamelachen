@@ -114,8 +114,14 @@
             <div class="input">
                 <input type="text" class="text" placeholder="Type keywords to search">
                 <div class="date">
-                  <input type="text" class="from" placeholder="From" id="from">
-                  <input type="text" class="to" placeholder="To" id="to">
+                  <div class="to-wrapper w-100">
+                    <input required="" type="date" class="from form-control" placeholder="From" onfocus="(this.type='date')"/>
+                    </div>
+                    <div class="to-wrapper w-100">
+                      <input required="" type="date" class="to form-control" placeholder="To" onfocus="(this.type='date')"/>
+                    </div>
+                  <!-- <input type="text" class="from" placeholder="From" id="from"> -->
+                  <!-- <input type="text" class="to" placeholder="To" id="to"> -->
                   <button><i class="ri-search-line"></i></button>
                 </div>
             </div>
@@ -272,7 +278,7 @@
     ></script>
 
 
-    <script>
+    <!-- <script>
       var hasBeenClickedFrom = false;
       var from = document.getElementById("from");
       from.addEventListener("click", function () {
@@ -294,7 +300,7 @@
           hasBeenClickedTo = true;
         }
       });
-    </script>
+    </script> -->
 
 
     <script>
