@@ -114,11 +114,8 @@
             <div class="input">
                 <input type="text" class="text" placeholder="Type keywords to search">
                 <div class="date">
-                  <div class="date-picker">
-                    <input type="date" placeholder="from" class=" from" name="from">
-
-                  </div>
-                  <input type="date" class="to" name="to">
+                  <input type="text" class=" from" name="from" id="from" onclick="changeInputTypeFrom()" placeholder="From">
+                  <input type="text" class="to" name="to" id="to" onclick="changeInputTypeTo()" placeholder="From">
                   <button><i class="ri-search-line"></i></button>
                 </div>
             </div>
@@ -354,6 +351,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+
+
+    <script>
+      function changeInputTypeFrom() {
+        document.getElementById("from").type = "date";
+      }
+
+      function changeInputTypeTo() {
+        document.getElementById("to").type = "date";
+      }
+    </script>
+
+
 
     <script>
 

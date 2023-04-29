@@ -40,50 +40,9 @@ code {
 
 
 
-.date-picker {
-    width: 100%;
-    display: inline-block;
-    background: rgba(40, 40, 250, .1);
-    min-width: 10rem;
-    min-height: 2rem;
-    // padding: .5rem;
-    border-radius: .35rem;
-    position: relative;
-    isolation: isolate;
-  }
-  
-  .date-picker,
-  .date-picker>* {
-    cursor: text;
-    font-size: 1.2rem;
-  }
-  
-  .date-picker:hover {
-    background: rgba(40, 40, 250, .28);
-  }
-  
-  .date-picker:active {
-    background: rgba(40, 40, 250, .2);
-  }
-  
-  .date-picker:focus>input[type="date"],
-  .date-picker:focus-within>input[type="date"] {
-    color: #00f;
-  }
-  
-  .date-picker:focus,
-  .date-picker:focus-within {
-    // box-shadow: 0 0 0 .1rem #00f;
-  }
-
-
-
 
 
 // -----------------------------------
-
-
-
 
 
 
