@@ -360,6 +360,7 @@ section {
     &__container {
 
         &__row {
+            
             background-color: #fff;
             border-radius: .5rem;
             box-shadow: 0px 3px 10px 1px #22222213;
@@ -2679,9 +2680,11 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
 
     @media (max-width:767px){
         flex-direction: column;
+        gap: 4rem;
     }
 
     .main1 {
@@ -2885,7 +2888,7 @@ section {
         }
 
 
-        .sign-up {
+        .signup-link {
             margin: auto;
             margin-top: .8rem;
             text-align: center;
@@ -2906,9 +2909,11 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
 
     @media (max-width:767px){
         flex-direction: column;
+        gap: 4rem;
     }
 
     .main1 {

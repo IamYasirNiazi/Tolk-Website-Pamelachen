@@ -2252,10 +2252,12 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
 }
 @media (max-width: 767px) {
   .login-details {
     flex-direction: column;
+    gap: 4rem;
   }
 }
 .login-details .main1 {
@@ -2431,13 +2433,13 @@ section {
 .login-details .main2 .btn-google img {
   width: 1.5rem;
 }
-.login-details .main2 .sign-up {
+.login-details .main2 .signup-link {
   margin: auto;
   margin-top: 0.8rem;
   text-align: center;
   font-size: 0.75rem;
 }
-.login-details .main2 .sign-up a {
+.login-details .main2 .signup-link a {
   color: #FF4E1A !important;
 }
 
@@ -2445,10 +2447,12 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
 }
 @media (max-width: 767px) {
   .sign-up {
     flex-direction: column;
+    gap: 4rem;
   }
 }
 .sign-up .main1 {
