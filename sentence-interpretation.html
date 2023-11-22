@@ -161,9 +161,32 @@
                       ><input
                         type="radio"
                         name="source-lang1"
-                      />Allure</label
+                      />Other</label
                     >
                   </span>
+                  <!-- <span id="source-more-btn" onclick="sourceMoreBtn()">
+                    <label><i class="ri-add-line"></i>Other</label>
+                  </span>
+                  <span class="source-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />Swedish</label
+                    ></span
+                  >
+                  <span class="source-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />Italian</label
+                    ></span
+                  >
+                  <span class="source-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />German</label
+                    ></span
+                  >
+                  <span class="source-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />Japanese</label
+                    ></span
+                  > -->
               </div>
             </div>
 
@@ -212,9 +235,32 @@
                       ><input
                         type="radio"
                         name="source-lang2"
-                      />Allure</label
+                      />Other</label
                     >
                   </span>
+                  <!-- <span id="target-more-btn" onclick="targetMoreBtn()">
+                    <label><i class="ri-add-line"></i>Other</label>
+                  </span>
+                  <span class="target-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />Swedish</label
+                    ></span
+                  >
+                  <span class="target-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />Italian</label
+                    ></span
+                  >
+                  <span class="target-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />German</label
+                    ></span
+                  >
+                  <span class="target-show-more"
+                    ><label
+                      ><input type="radio" name="target-lang" />Japanese</label
+                    ></span
+                  > -->
                 </div>
               </div>
               <div
@@ -247,9 +293,32 @@
                       ><input
                         type="radio"
                         name="interpretation-lang"
-                      />Allure</label
+                      />Other</label
                     >
                   </span>
+                  <!-- <span id="target-more-btn1" onclick="targetMoreBtn1()">
+                    <label><i class="ri-add-line"></i>Other</label>
+                  </span>
+                  <span class="target-show-more1"
+                    ><label
+                      ><input type="radio" name="target-lang" />Swedish</label
+                    ></span
+                  >
+                  <span class="target-show-more1"
+                    ><label
+                      ><input type="radio" name="target-lang" />Italian</label
+                    ></span
+                  >
+                  <span class="target-show-more1"
+                    ><label
+                      ><input type="radio" name="target-lang" />German</label
+                    ></span
+                  >
+                  <span class="target-show-more1"
+                    ><label
+                      ><input type="radio" name="target-lang" />Japanese</label
+                    ></span
+                  > -->
                 </div>
               </div>
               <button class="btn1" id="voice-wrapper" onclick="btnToggle()">
@@ -501,6 +570,22 @@
         sourceShowBtn.classList.toggle("hide");
       }
     </script>
+
+<script>
+  function targetMoreBtn(event) {
+    // event.stopPropagation()
+    const targetShowBtn = document.getElementById("target-more-btn");
+    const targetShowMore =
+      document.getElementsByClassName("target-show-more");
+    // console.log(sourceShowMore)
+
+    for (var i = 0; i < targetShowMore.length; i++) {
+      // buttons[i].hidden = true;
+      targetShowMore[i].classList.toggle("show-list");
+    }
+    targetShowBtn.classList.toggle("hide");
+  }
+</script>
 
     <script>
       function selectTranslationLang1() {
