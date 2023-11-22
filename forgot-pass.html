@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login Page | TOLK Website</title>
+    <title>SignUp Page | TOLK Website</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -40,7 +40,7 @@
   <body>
 
 
-    <div class="login-details">
+    <div class="forgot-pass">
       <div class="main1">
         <img src="./images/logo login.png" alt="logo" class="img-fluid" />
         <!-- <h3>Transcend Language</h3>
@@ -52,30 +52,44 @@
       </div>
 
       <div class="main2">
-        <div class="title">
-          <h6>登入</h6>
-          <!-- <span>Fill the following information to login to your account.</span> -->
+        <div class="title completeSignUp">
+          <h6>忘記密碼？</h6>
+          <span>輸入email，我們將寄送重設密碼通知信至您的信箱</span>
         </div>
 
         <div class="input">
-            <div class="email">
+          <div class="successMsg">
+            <img src="images/tick.png" class="img-fluid">
+            <div>
+                <h4>請查看您的信箱</h4>
+                <span>我們已寄送重設密碼通知信至noname@gmail.com</span>
+            </div>
+          </div>
+            <div class="email completeSignUp">
               <label class="w-100">
                 <div>
                   <input type="email" class="w-100" placeholder="Email" />
                 </div>
               </label>
             </div>
-            <div class="pass mt-1">
+            <!-- <div class="pass mt-1 completeSignUp">
               <label class="w-100">
                 <input type="password" id="password" class="w-100" placeholder="密碼" />
                 <i class="ri-eye-fill" onclick="togglePasswordVisibility()"></i>
               </label>
             </div>
-            <div class="forgot">
-              <a href="forgot-pass.html" class="forgot-pass">忘記密碼？</a>
-            </div>
-            <button class="btn-login">登入</button>
-            <span class="signup-link">沒有帳戶？<a href="./sign-up.html">建立帳戶</a></span>
+            <div class="pass mt-1 completeSignUp">
+              <label class="w-100">
+                <input type="password" id="confirmPassword" class="w-100" placeholder="確認密碼" />
+                <i class="ri-eye-fill" onclick="confirmPasswordVisibility()"></i>
+              </label>
+            </div> -->
+            <!-- <div class="forgot">
+              <a href="" class="forgot-pass">忘記密碼？</a>
+            </div> -->
+            <button class="btn-signup completeSignUp" onclick="completeSignUp()">建立帳戶</button>
+            <a href="reset-pass.html" class="btn-reset-pass" id="resetBtn">返回登入頁面</a>
+            <span class="login-link completeSignUp"><a href="./login.html"><i class="ri-arrow-left-line"></i> 返回登入頁面</a></span>
         </div>
 
         <div class="footer">
@@ -119,7 +133,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script>
+    <!-- <script>
       function togglePasswordVisibility() {
           var passwordField = document.getElementById("password");
 
@@ -130,6 +144,36 @@
           }
       }
   </script>
+
+<script>
+  function confirmPasswordVisibility() {
+      var passwordField = document.getElementById("confirmPassword");
+
+      if (passwordField.type=="password") {
+            passwordField.type = "text";
+        } else {
+            passwordField.type = "password";
+      }
+  }
+</script> -->
+
+<script>
+  function completeSignUp(){
+
+    const hideFields = document.querySelectorAll(".completeSignUp")
+    hideFields.forEach(element => {
+      element.style.display = "none"
+    });
+
+    const showSuccessMsg = document.querySelectorAll(".successMsg")
+    showSuccessMsg.forEach(element => {
+      element.style.display = "flex"
+    });
+
+    const resetBtn = document.getElementById("resetBtn")
+    resetBtn.style.display = "flex"
+  }
+</script>
 
   </body>
 </html>
